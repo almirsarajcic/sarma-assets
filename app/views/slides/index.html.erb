@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Slides</h1>
+
+<ul>
+  <% @slides.each do |slide| %>
+    <li><%= image_tag(slide.image) %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'New Slide', new_slide_path %>
