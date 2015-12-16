@@ -1,4 +1,6 @@
 class SlidesController < ApplicationController
+  http_basic_authenticate_with name: ENV['HTTP_USERNAME'], password: ENV['HTTP_PASSWORD'], except: :index
+
   def index
     @slides = Slide.all
   end
