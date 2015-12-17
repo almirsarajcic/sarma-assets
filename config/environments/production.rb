@@ -80,6 +80,6 @@ Rails.application.configure do
   config.paperclip_defaults = config.paperclip_defaults.merge({
     storage: :s3,
     s3_host_name: ENV['S3_HOST'],
-    bucket: ENV['S3_BUCKET']
+    bucket: ENV['S3_BUCKET'],
   })
 end

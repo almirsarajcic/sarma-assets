@@ -5,7 +5,7 @@
 <div id="slider" class="flexslider">
   <ul class="slides">
     <% @slides.each do |slide| %>
-      <li><%= image_tag(slide.image) %></li>
+      <li><%= slide_tag(slide, '1170x') %></li>
     <% end %>
   </ul>
 </div>
@@ -13,7 +13,7 @@
 <div id="carousel" class="flexslider">
   <ul class="slides">
     <% @slides.each do |slide| %>
-      <li><%= image_tag(slide.image) %></li>
+      <li><%= slide_tag(slide, '210px') %></li>
     <% end %>
   </ul>
 </div>
