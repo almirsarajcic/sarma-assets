@@ -31,5 +31,10 @@ module SarmaAssets
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    config.paperclip_defaults = {
+      path: '/:class/:id/:fingerprint.:extension',
+      use_timestamp: false
+    }
   end
 end

@@ -47,6 +47,7 @@ end
 
 gem 'paperclip'
 gem 'dotenv-rails'
+gem 'aws-sdk', '< 2.0'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap'

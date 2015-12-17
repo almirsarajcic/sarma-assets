@@ -38,4 +38,9 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  config.paperclip_defaults = config.paperclip_defaults.merge({
+    url: "/system#{config.paperclip_defaults[:path]}",
+    path: ':rails_root/public:url',
+  })
 end
