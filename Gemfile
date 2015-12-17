@@ -47,3 +47,7 @@ end
 
 gem 'paperclip'
 gem 'dotenv-rails'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap'
+end
