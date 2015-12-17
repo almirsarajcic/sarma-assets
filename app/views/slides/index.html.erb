@@ -2,10 +2,20 @@
 
 <h1>Listing Slides</h1>
 
-<ul>
-  <% @slides.each do |slide| %>
-    <li><%= image_tag(slide.image) %></li>
-  <% end %>
-</ul>
+<div id="slider" class="flexslider">
+  <ul class="slides">
+    <% @slides.each do |slide| %>
+      <li><%= image_tag(slide.image) %></li>
+    <% end %>
+  </ul>
+</div>
+
+<div id="carousel" class="flexslider">
+  <ul class="slides">
+    <% @slides.each do |slide| %>
+      <li><%= image_tag(slide.image) %></li>
+    <% end %>
+  </ul>
+</div>
 
 <%= link_to 'New Slide', new_slide_path %>

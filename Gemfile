@@ -50,4 +50,5 @@ gem 'dotenv-rails'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap'
+  gem 'rails-assets-flexslider'
 end
